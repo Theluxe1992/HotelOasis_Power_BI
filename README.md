@@ -58,12 +58,9 @@ Una vez cargados los datos limpios en el modelo, se estructuraron **3 reportes e
 
 # Conexión a la fuente de datos: Cargamos el archivo Informe de Huéspedes en Data Orange Mining a través del widget “File”. Conectamos este widget con “Data Info”, el cual nos brinda un resumen del # conjunto de datos, donde incluye numero total de instancias (filas) y atributos (columnas), como también de sus características de # tipos de datos,	Ej:	(numéricos, categóricos, entre otros).
 # Con “Data Info” se determina que el archivo cuenta con 1030 registros y 15 atributos (columnas).	 
-![alt text](EvidenciaFinal001.jpg)
-
 
 # Valores atípicos: Para identificar los valores atípicos se usa el widget “Column Statistics” del bloque “Data”.
 # Hallamos un valor atipico de gran magnitud en la variable “Tarifa por Noche” en cual como valor máximo es de 10,000,000,000, el cual es un valor extremadamente alto en comparación de los demás datos que distorsiona la escala real del análisis.	
-![alt text](EvidenciaFinal002.jpg)
 
 # Media y moda:
 # Usamos el mismo widget “Column Statistics” para verificar la media y la moda, con las variables “Tarifa por Noche”, “Días de estancia” y “Total cargos por servicio”, los valores fueron los siguientes:
@@ -72,18 +69,15 @@ Una vez cargados los datos limpios en el modelo, se estructuraron **3 reportes e
 # -	“Días de Estancia”: Media = 3. Moda = 4.
 # -	“Total	cargos	por servicio”:
 # -	Media = 4,350. Moda = 2,500	
-![alt text](EvidenciaFinal003.jpg)
 
 # Columnas de la fuente de datos: Visualizamos la lista de todas las columnas que están contenidas en la base de datos. Usamos el widget “Data Table” en el bloque de “Data” el cual nos muestra el contenido de los encabezados y los primeros registros.
 # Dividimos el formato en 3 imágenes de forma secuencial que muestra la forma de la base total ya que al ponerla en una sola imagen gracias al formato en PDF puede no ser legible	 
-![alt text](EvidenciaFinal004.png)
 
 # Calidad de los datos:
 # Evaluando la calidad de los datos que nos permite reconocer e identificar los valores atípicos, datos faltantes o duplicados, usamos el widget “Scatter Plot” del	bloque	“Visualize”. Encontramos los siguientes resultados:
 # 1.	Tarifa por Noche (Eje “x”) y Días de estancia (Eje “y) muestra el valor atípico ya identificado en la sección 2 de esta tabla de un color amarillo (10000000000), lo cual debemos eliminar o editar este dato ya que distorsiona	la visualización de los datos y comprime los números según su rango.
 # 2.	En  la  misma  imagen podemos  encontrar  una leyenda que dice “  Points with missing 'Tarifa por Noche' or 'Días de Estancia'	are	not displayed”, lo que nos permite identificar datos nulos o faltantes en estas dos columnas “Tarifa por Noche” y “Días de Estancia” lo que afecta la integridad de los datos.
 # 3. Debido al valor atípico, la escala del eje “x” (Tarifa por Noche) se ve afectada la cual aumenta el rango de forma exagerada y no permite   visualizar la distribución real de los datos.	
-![alt text](EvidenciaFinal005.png.jpg)
 
 # ***********************************************************************************************************************************
 
@@ -112,7 +106,6 @@ Interpretación:
 •	Gráfico de barras: Tarifa Promedio por Canal de Reserva.
 Interpretación:
 # "El análisis de tarifas muestra que la tarifa promedio general es de 10,000. La habitación [Tipo con tarifa más alta] tiene la tarifa promedio más elevada ([valor]), mientras que [Tipo con tarifa más baja] es la más económica. Por canal de reserva, [Canal] presenta la tarifa más alta, lo que sugiere que los huéspedes que reservan a través de este canal están dispuestos a pagar más. Se recomienda revisar la estrategia de precios para [Tipo de habitación] y considerar promociones en los canales con tarifas más bajas para aumentar la ocupación."
-
 
 # ***********************************************************************************************************************************
 
